@@ -18,7 +18,7 @@ app.get('/api', (req, res) => {
   res.json({ message: 'Hello API' });
 });
 
-const port = process.env.PORT || 5000;
+const port = process.env.APP_SERVER_PORT || 5000;
 app.listen(port, err => {
   if (err) {
     console.error(err);
